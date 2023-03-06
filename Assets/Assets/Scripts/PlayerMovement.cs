@@ -30,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
     {
         Rotate();
         Movement();
+
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     //This function takes input to allow the player to move and jump
